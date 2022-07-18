@@ -1,0 +1,23 @@
+package day11_stringManipulations;
+
+public class C06_endsWith {
+    public static void main(String[] args) {
+
+        /*
+         Kullanicidan email adresini girmesini isteyin,
+         mail @gmail.com icermiyorsa  “lutfen gmail adresi giriniz”,
+         @gmail.com ile bitiyorsa  “Email adresiniz kaydedildi “ ,
+         @gmail.com ile bitmiyorsa lutfen yazimi kontrol edin yazdirin
+          */
+
+        String input = "fatih@gmail.com";
+
+        if (!input.contains("@gmail.com")) {
+            System.out.println("Lütfen gmail adresi giriniz");
+        } else if (input.endsWith("@gmail.com")) {
+            System.out.println("E-mail adresiniz kaydedildi.");
+        } else {
+            System.out.println("Lütfen yazımı kontrol ediniz.");
+        }
+    }
+}
