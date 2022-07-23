@@ -1,0 +1,57 @@
+package day26_constructor;
+
+import day25_constructor.C05_Car;
+
+public class C02_ArabaRunner {
+    public static void main(String[] args) {
+        // Bir gün önceki C05_Car classından obje oluşturalım.
+        /*
+        Farklı bir package'daki bir classtan obje oluşturduğumuzda
+        access modifierları da dikkate almalıyız.
+         */
+        C05_Car car1 = new C05_Car();
+        System.out.println(car1.fiyat);
+
+        /*
+        Araba classından bir obje oluşturduğumda
+        eğer default constructor kullanıldıysa
+        tüm özellikler için tek tek değer atamak zorunda kalırız.
+         */
+
+        C01_Araba araba1 = new C01_Araba();
+        araba1.fiyat = 10000;
+        araba1.marka = "Mercedes";
+        araba1.yil = 2010;
+        araba1.model = "C180";
+
+        System.out.println("Araba1 bilgileri\nMarka : " + araba1.marka + "\nModel : " + araba1.model
+                + "\nYıl : " + araba1.yil + "\nFiyat : " + araba1.fiyat);
+
+        /*
+        Eğer bir objeyi oluştururken bazı özelliklerini
+        argument olarak belirtip
+        o özelliklerde bir obje oluşturmak istersek
+        Java itiraz eder.
+        Çünkü her classta default constructor vardır
+        ama o da parametresizdir.
+        Bizim yeni ve parametreli constructorlara ihtiyacımız var.
+         */
+        C01_Araba araba2 = new C01_Araba("BMW", "5.20", 2011, 15000);
+
+        System.out.println("Araba2 bilgileri\nMarka : " + araba2.marka + "\nModel : " + araba2.model
+                + "\nYıl : " + araba2.yil + "\nFiyat : " + araba2.fiyat);
+
+
+        C01_Araba araba3 = new C01_Araba("Opel" , "Astra", 2015, 78000);
+
+        System.out.println("Araba3 bilgileri\nMarka : " + araba3.marka + "\nModel : " + araba3.model
+                + "\nYıl : " + araba3.yil + "\nFiyat : " + araba3.fiyat);
+
+
+        C01_Araba araba4 = new C01_Araba("Audi" , "A5", 2020, 50000);
+
+        System.out.println("Araba4 bilgileri\nMarka : " + araba4.marka + "\nModel : " + araba4.model
+                + "\nYıl : " + araba4.yil + "\nFiyat : " + araba4.fiyat);
+
+    }
+}
