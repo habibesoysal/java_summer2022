@@ -1,13 +1,13 @@
 package day26_constructor;
 
-public class C01_Araba {
+public class Araba {
 
     public String marka = "Marka belirtilmedi";
     public String model = "Model belirtilmedi";
     public int yil;
     public int fiyat;
 
-    public C01_Araba(String markaR, String modelR, int yilR, int fiyatR) {
+    public Araba(String markaR, String modelR, int yilR, int fiyatR) {
         marka = markaR;
         model = modelR;
         yil = yilR;
@@ -17,14 +17,13 @@ public class C01_Araba {
     Biz herhangi bir constructor oluşturduğumuzda
     Java default constructor'ı siler.
     Eğer biz projemizde bir sorun yaşanmasını istemiyorsak
-    mutlaka default constructor yerine
+    default constructor yerine mutlaka
     parametresiz bir contructor oluşturmalıyız.
      */
 
-    public C01_Araba() {
+    public Araba() {
 
     }
-
 
     public void benzinliAracMethodu() {
         System.out.println("Bu araç benzinli motora sahiptir.");

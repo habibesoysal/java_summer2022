@@ -1,6 +1,6 @@
 package day25_constructor;
 
-public class C05_Car {
+public class Car {
     /*
     Bu class bizim kalıphanemiz.
     Bir araba oluşturmak için ihtiyacımız olan variable ve mehtodları bul classta belirleriz.

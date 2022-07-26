@@ -31,7 +31,5 @@ public class C01_Lists {
 
         set() methodu sildiği eski elementi de bize döndürür.
          */
-
-
     }
 }

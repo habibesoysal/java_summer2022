@@ -48,9 +48,5 @@ public class C01_Mda {
         Eğer inner arrayleri farklı uzunlukta oluşturmak istersek
         mecburen birinci yöntemi kullanmalıyız.
          */
-
-
-
-
     }
 }
