@@ -10,7 +10,6 @@ public class C02_Varargs {
         int sayi4 = 40;
 
         toplaYazdir(sayi1, sayi2, sayi3, sayi4);
-
     }
 
     public static void toplaYazdir(int sayi1, int sayi2, int sayi3, int sayi4) {

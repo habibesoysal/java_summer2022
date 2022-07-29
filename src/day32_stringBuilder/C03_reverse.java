@@ -4,7 +4,6 @@ public class C03_reverse {
     public static void main(String[] args) {
         // Verilen bir input'u tersine çevirip bize döndüren bir method oluşturun
 
-
         String input = "Hey gidi for loop günleri";
 
         String tersInput = tersineCevir(input);

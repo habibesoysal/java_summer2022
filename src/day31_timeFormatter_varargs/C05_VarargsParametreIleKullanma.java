@@ -11,7 +11,7 @@ public class C05_VarargsParametreIleKullanma {
         varargsın sınırlarını bilebilmesi için
         parametrelerin sonuncusu olmalıdır.
         Öncesinde farklı parametreler olabilir ama
-        varargstan parametre olamaz.
+        varargstan sonra parametre olamaz.
 
         Bu kuraldan ötürü bir methodda sadece 1 tane varargs olabilir.
          */

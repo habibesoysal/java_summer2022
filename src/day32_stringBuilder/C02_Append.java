@@ -11,12 +11,15 @@ public class C02_Append {
 
         // append istediğimiz String'in en sona ekler.
 
-        sb.insert(4, " her şeyi düşünmüş,"); // Java her şeyi düşünmüş, daha ne yapsın?
-        System.out.println(sb);
+        sb.append("Java",2,4);
+        System.out.println(sb); // Java daha ne yapsın?va
+
+        sb.insert(4, " her şeyi düşünmüş,");
+        System.out.println(sb); // Java her şeyi düşünmüş, daha ne yapsın?
 
         // araya ekleme yapmak istediğimizde append değil insert kullanmalıyız.
 
         sb.insert(22,"valla valla", 5,11); // Java her şeyi düşünmüş valla, daha ne yapsın?
-        System.out.println(sb); //
+        System.out.println(sb); // Java her şeyi düşünmüş valla, daha ne yapsın?
     }
 }

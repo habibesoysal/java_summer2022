@@ -7,7 +7,6 @@ public class C01_OlusturmaYontemleri {
         StringBuilder sb2 = new StringBuilder("Java Candır...");
         StringBuilder sb3 = new StringBuilder(10);
 
-
         System.out.println(sb1.length()); // 0
         System.out.println(sb1.capacity()); // 16
 
