@@ -12,9 +12,7 @@ public class C01_Ternary {
         double sayi = scan.nextDouble();
 
 
-        System.out.println(sayi>= 0 ? sayi : (-1*sayi));
-
-
+        System.out.println(sayi >= 0 ? sayi : (-1 * sayi));
 
 
     }

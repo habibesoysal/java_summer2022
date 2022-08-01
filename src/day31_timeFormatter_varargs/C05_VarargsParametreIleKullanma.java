@@ -12,7 +12,6 @@ public class C05_VarargsParametreIleKullanma {
         parametrelerin sonuncusu olmalıdır.
         Öncesinde farklı parametreler olabilir ama
         varargstan sonra parametre olamaz.
-
         Bu kuraldan ötürü bir methodda sadece 1 tane varargs olabilir.
          */
     }

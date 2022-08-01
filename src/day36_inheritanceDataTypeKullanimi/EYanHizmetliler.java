@@ -19,18 +19,18 @@ public class EYanHizmetliler extends BMuhasebe {
         kendisinin spesifik özelliğini ortaya çıkarmasıdır.
 
         Overriding'i nerede dikkate alıyoruz?
-        Bir obje oluşturulken data türü ve cons farklı ise
+        Bir obje oluşturulurken data türü ve cons farklı ise
 
         Eğer bir obje oluşturulurken data türü ve cons farklı ise
-        objeşnin özelliklerini belirlerken 3 konuya dikkat çekmeliyiz
+        objenin özelliklerini belirlerken 3 konuya dikkat çekmeliyiz
         1- Obje cons'ın olduğu classta oluşur.
 
         2- Objenin özelliklerini aramaya data türünün olduğu classtan başlarız
-           bu classta aranan özellik bulunamazsa parenc classlara bakılır,
+           bu classta aranan özellik bulunamazsa parent classlara bakılır,
            orada da bulamazsak CTE verir.
 
         3- Aranan özellik Eğer aranan özellik variable ise bulduğumuz ilk değeri yazdırırız.
-           Aranan özellik method ise değeri yazdırmadan önce override diye kontrol etmemiz gerekir.
+           Aranan özellik method ise değeri yazdırmadan önce override edilmiş mi diye kontrol etmemiz gerekir.
            Eğer override edildiyse en güncel değeri yazdırırız.
          */
 

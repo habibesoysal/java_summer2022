@@ -23,8 +23,8 @@ public class ArabaRunner {
 
         arb1.setModel("Corolla"); // model olarak Supra'yı atadık
         // modeli yazdırma imkanımız yok çünkü getter methodu yok.
+
         System.out.println(arb1.getYakit()); // Elektrikli bilgisini yazdırabildik.
         // yakıtı değiştiremeyiz çünkü setter methodu yok.
-
     }
 }
