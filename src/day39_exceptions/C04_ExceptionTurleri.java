@@ -25,6 +25,5 @@ public class C04_ExceptionTurleri {
          */
 
         Thread.sleep(5000);
-
     }
 }
