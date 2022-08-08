@@ -32,6 +32,4 @@ public interface I03_Interfaces {
     public void motor();
 
     public abstract void teker();
-
-
 }
