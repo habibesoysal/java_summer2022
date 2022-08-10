@@ -16,5 +16,11 @@ public class C05_LinkedList_DequeDataTuru {
         ll4.removeLastOccurrence("Selim");
         System.out.println(ll4); // [Cavidan, Mesut, Selim, Tevfik]
         System.out.println(ll4.pop());
+        // LinkedListin başındaki elementi silip bize döndürür.
+
+        ll4.remove();
+        ll4.removeFirst();
+        ll4.removeLast();
+        // Deque iki taraflı queue demektir. Dolayısıyla her methodun first ve lastı var.
     }
 }
