@@ -1,9 +1,6 @@
 package day46_maps;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class ReusableMethods {
     public static Map<Integer, String> mapOlustur() {
@@ -11,7 +8,10 @@ public class ReusableMethods {
         sinifMap.put(101, "Ali, Can, JDev");
         sinifMap.put(102, "Enes, Cem, Tester");
         sinifMap.put(103, "Taha, Emre, JDev");
-        sinifMap.put(104, "Derya, Deniz, Tester");
+        sinifMap.put(104, "Derya, Deniz, Devops");
+        sinifMap.put(105, "Enes, Can, Tester");
+        sinifMap.put(106, "Taha, Deniz, JDev");
+        sinifMap.put(107, "Derya, Cem, Tester");
 
         return sinifMap;
     }
@@ -32,5 +32,28 @@ public class ReusableMethods {
             methoddakiList.add(eachArr[0] + " " + eachArr[1]);
         }
         return methoddakiList;
+    }
+
+    public static void bransOgrenciSayisiYazdir(Map<Integer, String> sinifListMap) {
+        // brans = branstakiOgrenciSayisi
+        Map<String, Integer> bransOgrSayiMap = new TreeMap<>();
+        Collection<String> valuesCollection = sinifListMap.values();
+        String[] valuArr;
+        String brans;
+        Integer branstakiOgrSayisi;
+        for (String each : valuesCollection) {
+            valuArr = each.split(", ");
+            brans = valuArr[2];
+
+            // branşın bransOgrSayiMap mapinde key olarak daha önceden eklenip eklmediğini kontrol etmeliyiz.
+
+            if (!bransOgrSayiMap.containsKey(brans)) {
+                bransOgrSayiMap.put(brans, 1);
+            } else {
+                branstakiOgrSayisi = bransOgrSayiMap.get(brans);
+                bransOgrSayiMap.put(brans, branstakiOgrSayisi + 1);
+            }
+        }
+        System.out.println(bransOgrSayiMap);
     }
 }
